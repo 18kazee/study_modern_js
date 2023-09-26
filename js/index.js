@@ -180,7 +180,7 @@
 // // console.log(newNumArr);
 // 
 // const newNameArr = nameArr.map((name) => {
-//    if(name === "じゃけえ"){
+//    if (name === "じゃけえ"){
 //       return name
 //    } else {
 //       return `${name}さん`;
@@ -196,19 +196,34 @@
 // const val1 = 1 < 0 ? 'trueです' : 'falseです';
 // console.log(val1);
 
-const num = "1300";
-// console.log(num.toLocaleString());
+// const num = "1300";
+// // console.log(num.toLocaleString());
+// 
+// // const formattedNum = typeof num === 'number' ? num.toLocaleString() : '数値を入力してください。';
+// // console.log(formattedNum);
+// 
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? '100を超えています!!' : '許容範囲内です';
+// }
+// console.log(checkSum(50, 60));
+// console.log(checkSum(50, 40));
 
-// const formattedNum = typeof num === 'number' ? num.toLocaleString() : '数値を入力してください。';
-// console.log(formattedNum);
+/**
+ * 論理演算子の本当の意味を知ろう && ||
+ */
 
-const checkSum = (num1, num2) => {
-  return num1 + num2 > 100 ? '100を超えています!!' : '許容範囲内です';
-}
-console.log(checkSum(50, 60));
-console.log(checkSum(50, 40));
+// const flag1 = true;
+// const flag2 = true;
+// 
+// if (flag1 || flag2) {
+//   console.log("1か2はtrueになります");
+// }
+// 
+// if (flag1 && flag2) {
+//   console.log("1も2もtrueになります");
+// }
 
-
-
-
-
+// ||は左側がfalseなら右側を返す
+const num = 100;
+const fee = num || "金額未設定です";
+console.log(fee);
